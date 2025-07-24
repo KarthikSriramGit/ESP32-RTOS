@@ -1,0 +1,1886 @@
+FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+loa�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 20 2025 23:12:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (40) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=33d00h (212224) map[0m
+[0;32mI (163) esp_image: segment 1: paddr=00043d28 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (163) esp_image: segment 2: paddr=00043d4c vaddr=3ffb0000 size=03f10h ( 16144) load[0m
+[0;32mI (173) esp_image: segment 3: paddr=00047c64 vaddr=40080000 size=083b4h ( 33716) load[0m
+[0;32mI (187) esp_image: segment 4: paddr=00050020 vaddr=400d0020 size=a3ebch (671420) map[0m
+[0;32mI (417) esp_image: segment 5: paddr=000f3ee4 vaddr=400883b4 size=0f3e4h ( 62436) load[0m
+[0;32mI (453) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (453) boot: Disabling RNG early entropy source...[0m
+[0;32mI (463) cpu_start: Multicore app[0m
+[0;32mI (472) cpu_start: Pro cpu start user code[0m
+[0;32mI (472) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (472) app_init: Application information:[0m
+[0;32mI (472) app_init: Project name:     door_monitor[0m
+[0;32mI (476) app_init: App version:      v5.4.1-dirty[0m
+[0;32mI (480) app_init: Compile time:     Jul 20 2025 23:12:41[0m
+[0;32mI (486) app_init: ELF file SHA256:  f6949a7b1...[0m
+[0;32mI (490) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (494) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (498) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (502) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (506) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (512) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (517) heap_init: At 3FFB87A0 len 00027860 (158 KiB): DRAM[0m
+[0;32mI (523) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (533) heap_init: At 40097798 len 00008868 (34 KiB): IRAM[0m
+[0;32mI (540) spi_flash: detected chip: generic[0m
+[0;32mI (542) spi_flash: flash io: dio[0m
+[0;33mW (545) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (559) main_task: Started on CPU0[0m
+[0;32mI (569) main_task: Calling app_main()[0m
+[0;32mI (599) wifi:wifi driver task: 3ffc19a0, prio:23, stack:6656, core=0[0m
+[0;32mI (609) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (609) wifi:wifi certification version: v7.0[0m
+[0;32mI (609) wifi:config NVS flash: enabled[0m
+[0;32mI (609) wifi:config nano formatting: disabled[0m
+[0;32mI (619) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (619) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (619) wifi:Init management short buffer num: 32[0m
+[0;32mI (629) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (629) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (639) wifi:Init static rx buffer num: 10[0m
+[0;32mI (639) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (649) wifi_init: rx ba win: 6[0m
+[0;32mI (649) wifi_init: accept mbox: 6[0m
+[0;32mI (649) wifi_init: tcpip mbox: 32[0m
+[0;32mI (649) wifi_init: udp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp tx win: 5760[0m
+[0;32mI (659) wifi_init: tcp rx win: 5760[0m
+[0;32mI (659) wifi_init: tcp mss: 1440[0m
+[0;32mI (669) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (669) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (679) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (759) wifi:mode : sta (f4:65:0b:46:b0:cc)[0m
+[0;32mI (759) wifi:enable tsf[0m
+[0;32mI (769) DOOR_MONITOR: 📡 Connecting to Wi-Fi...[0m
+[0;32mI (779) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (779) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (779) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (789) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (799) wifi:<ba-add>idx:0 (ifx:0, 6c:cd:d6:77:6c:77), tid:5, ssn:0, winSize:64[0m
+[0;32mI (829) wifi:connected with Ace & King of Hearts, aid = 4, channel 1, BW20, bssid = 6c:cd:d6:77:6c:77[0m
+[0;32mI (829) wifi:security: WPA2-PSK, phy: bgn, rssi: -74[0m
+[0;32mI (839) wifi:pm start, type: 1[0m
+
+[0;32mI (839) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (859) wifi:<ba-add>idx:1 (ifx:0, 6c:cd:d6:77:6c:77), tid:0, ssn:0, winSize:64[0m
+[0;32mI (879) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (879) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (2909) esp_netif_handlers: sta ip: 192.168.0.39, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (2909) DOOR_MONITOR: ✅ Wi-Fi connected![0m
+[0;32mI (2909) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2919) DOOR_MONITOR: GPIO 4 configured for sensor[0m
+[0;33mW (2919) DOOR_MONITOR: Door/Window is OPEN![0m
+[1;31mE (2929) HTTP_CLIENT: Error parse url https://api.telegram.org/bot8147801516:AAGXa3En0T2wQTTtV2APgHGWyMSEyCK_1sE/sendMessage?chat_id=1245560165&text=Hello Master Stark%2C%20your%20door%20or%20window%20is%20OPEN%21%20Might%20I%20suggest%20increasing%20the%20safety%3F[0m
+[0;32mI (3349) mbedtls: ssl_tls.c:4606 => handshake[0m
+
+[0;32mI (3349) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (3349) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (3349) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_HELLO_REQUEST[0m
+
+[0;32mI (3359) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (3359) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (3359) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_HELLO[0m
+
+[0;32mI (3369) mbedtls: ssl_client.c:919 => write client hello[0m
+
+[0;32mI (3379) mbedtls: ssl_msg.c:2783 => write handshake message[0m
+
+[0;32mI (3379) mbedtls: ssl_msg.c:2943 => write record[0m
+
+[0;32mI (3389) mbedtls: ssl_msg.c:3080 <= write record[0m
+
+[0;32mI (3389) mbedtls: ssl_msg.c:2904 <= write handshake message[0m
+
+[0;32mI (3399) mbedtls: ssl_client.c:1012 <= write client hello[0m
+
+[0;32mI (3399) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (3409) mbedtls: ssl_msg.c:2367 message length: 249, out_left: 249[0m
+
+[0;32mI (3419) mbedtls: ssl_msg.c:2374 ssl->f_send() returned 249 (-0xffffff07)[0m
+
+[0;32mI (3419) mbedtls: ssl_msg.c:2401 <= flush output[0m
+
+[0;32mI (3419) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_HELLO[0m
+
+[0;32mI (3429) mbedtls: ssl_tls12_client.c:1195 => parse server hello[0m
+
+[0;32mI (3439) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (3439) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (3449) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (3589) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (3599) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (3599) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (3599) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (3609) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 74[0m
+
+[0;32mI (3609) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 74[0m
+
+[0;32mI (3619) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 69 (-0xffffffbb)[0m
+
+[0;32mI (3619) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (3629) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (3629) mbedtls: ssl_tls12_client.c:1447 server hello, total extension length: 25[0m
+
+[0;32mI (3639) mbedtls: ssl_tls12_client.c:1661 <= parse server hello[0m
+
+[0;32mI (3649) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (3649) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (3649) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_CERTIFICATE[0m
+
+[0;32mI (3659) mbedtls: ssl_tls.c:7962 => parse certificate[0m
+
+[0;32mI (3669) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (3669) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (3679) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (3679) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (3689) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (3689) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (3699) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (3699) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 5137[0m
+
+[0;32mI (3709) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 5137[0m
+
+[0;32mI (3709) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5132 (-0xffffebf4)[0m
+
+[0;32mI (3719) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (3759) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (3869) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (3869) mbedtls: ssl_tls.c:8076 <= parse certificate[0m
+
+[0;32mI (3869) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (3869) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (3879) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_KEY_EXCHANGE[0m
+
+[0;32mI (3879) mbedtls: ssl_tls12_client.c:2089 => parse server key exchange[0m
+
+[0;32mI (3889) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (3889) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (3899) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (3899) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (3909) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (3919) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (3919) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (3929) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 305[0m
+
+[0;32mI (3929) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 305[0m
+
+[0;32mI (3939) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 300 (-0xfffffed4)[0m
+
+[0;32mI (3939) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (3949) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (3959) mbedtls: ssl_tls12_client.c:1805 ECDH curve: x25519[0m
+
+[0;32mI (3989) mbedtls: ssl_tls12_client.c:2459 <= parse server key exchange[0m
+
+[0;32mI (3989) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (3989) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (3989) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CERTIFICATE_REQUEST[0m
+
+[0;32mI (3999) mbedtls: ssl_tls12_client.c:2498 => parse certificate request[0m
+
+[0;32mI (4009) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (4009) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (4019) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (4019) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (4029) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (4029) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (4039) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (4039) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 9[0m
+
+[0;32mI (4049) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 9[0m
+
+[0;32mI (4049) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 4 (-0xfffffffc)[0m
+
+[0;32mI (4059) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (4069) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (4069) mbedtls: ssl_tls12_client.c:2660 <= parse certificate request[0m
+
+[0;32mI (4079) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (4079) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (4079) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_HELLO_DONE[0m
+
+[0;32mI (4089) mbedtls: ssl_tls12_client.c:2671 => parse server hello done[0m
+
+[0;32mI (4099) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (4099) mbedtls: ssl_msg.c:4257 reuse previously read message[0m
+
+[0;32mI (4109) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (4109) mbedtls: ssl_tls12_client.c:2699 <= parse server hello done[0m
+
+[0;32mI (4119) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (4119) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (4129) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_CERTIFICATE[0m
+
+[0;32mI (4129) mbedtls: ssl_tls.c:7557 => write certificate[0m
+
+[0;32mI (4139) mbedtls: ssl_tls.c:7568 <= skip write certificate[0m
+
+[0;32mI (4149) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (4149) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (4149) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_KEY_EXCHANGE[0m
+
+[0;32mI (4159) mbedtls: ssl_tls12_client.c:2714 => write client key exchange[0m
+
+[0;32mI (4499) mbedtls: ssl_msg.c:2783 => write handshake message[0m
+
+[0;32mI (4499) mbedtls: ssl_msg.c:2943 => write record[0m
+
+[0;32mI (4499) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (4499) mbedtls: ssl_msg.c:2367 message length: 42, out_left: 42[0m
+
+[0;32mI (4509) mbedtls: ssl_msg.c:2374 ssl->f_send() returned 42 (-0xffffffd6)[0m
+
+[0;32mI (4519) mbedtls: ssl_msg.c:2401 <= flush output[0m
+
+[0;32mI (4519) mbedtls: ssl_msg.c:3080 <= write record[0m
+
+[0;32mI (4529) mbedtls: ssl_msg.c:2904 <= write handshake message[0m
+
+[0;32mI (4529) mbedtls: ssl_tls12_client.c:3209 <= write client key exchange[0m
+
+[0;32mI (4539) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (4539) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (4549) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CERTIFICATE_VERIFY[0m
+
+[0;32mI (4549) mbedtls: ssl_tls12_client.c:3257 => write certificate verify[0m
+
+[0;32mI (4559) mbedtls: ssl_tls.c:7171 => derive keys[0m
+
+[0;32mI (4569) mbedtls: ssl_tls.c:7295 => calc verify[0m
+
+[0;32mI (4569) mbedtls: ssl_tls.c:7314 <= calc verify[0m
+
+[0;32mI (4579) mbedtls: ssl_tls.c:7222 <= derive keys[0m
+
+[0;32mI (4579) mbedtls: ssl_tls12_client.c:3279 <= skip write certificate verify[0m
+
+[0;32mI (4579) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (4589) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (4589) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_CHANGE_CIPHER_SPEC[0m
+
+[0;32mI (4599) mbedtls: ssl_msg.c:5189 => write change cipher spec[0m
+
+[0;32mI (4609) mbedtls: ssl_msg.c:2783 => write handshake message[0m
+
+[0;32mI (4609) mbedtls: ssl_msg.c:2943 => write record[0m
+
+[0;32mI (4619) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (4619) mbedtls: ssl_msg.c:2367 message length: 6, out_left: 6[0m
+
+[0;32mI (4629) mbedtls: ssl_msg.c:2374 ssl->f_send() returned 6 (-0xfffffffa)[0m
+
+[0;32mI (4629) mbedtls: ssl_msg.c:2401 <= flush output[0m
+
+[0;32mI (4639) mbedtls: ssl_msg.c:3080 <= write record[0m
+
+[0;32mI (4639) mbedtls: ssl_msg.c:2904 <= write handshake message[0m
+
+[0;32mI (4649) mbedtls: ssl_msg.c:5202 <= write change cipher spec[0m
+
+[0;32mI (4649) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (4659) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (4659) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_FINISHED[0m
+
+[0;32mI (4669) mbedtls: ssl_tls.c:8307 => write finished[0m
+
+[0;32mI (4669) mbedtls: ssl_tls.c:8141 => calc finished tls[0m
+
+[0;32mI (4679) mbedtls: ssl_tls.c:8172 <= calc finished[0m
+
+[0;32mI (4679) mbedtls: ssl_msg.c:2783 => write handshake message[0m
+
+[0;32mI (4689) mbedtls: ssl_msg.c:2943 => write record[0m
+
+[0;32mI (4689) mbedtls: ssl_msg.c:935 => encrypt buf[0m
+
+[0;32mI (4699) mbedtls: ssl_msg.c:1474 <= encrypt buf[0m
+
+[0;32mI (4699) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (4709) mbedtls: ssl_msg.c:2367 message length: 45, out_left: 45[0m
+
+[0;32mI (4709) mbedtls: ssl_msg.c:2374 ssl->f_send() returned 45 (-0xffffffd3)[0m
+
+[0;32mI (4719) mbedtls: ssl_msg.c:2401 <= flush output[0m
+
+[0;32mI (4719) mbedtls: ssl_msg.c:3080 <= write record[0m
+
+[0;32mI (4729) mbedtls: ssl_msg.c:2904 <= write handshake message[0m
+
+[0;32mI (4729) mbedtls: ssl_tls.c:8409 <= write finished[0m
+
+[0;32mI (4739) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (4739) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (4749) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_CHANGE_CIPHER_SPEC[0m
+
+[0;32mI (4759) mbedtls: ssl_tls12_client.c:3385 => parse new session ticket[0m
+
+[0;32mI (4759) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (4769) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (4769) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (4979) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (4979) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (4979) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (4989) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (4989) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 223[0m
+
+[0;32mI (4989) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 223[0m
+
+[0;32mI (4999) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 218 (-0xffffff26)[0m
+
+[0;32mI (5009) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (5009) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (5019) mbedtls: ssl_tls12_client.c:3479 <= parse new session ticket[0m
+
+[0;32mI (5019) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (5029) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (5029) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_CHANGE_CIPHER_SPEC[0m
+
+[0;32mI (5039) mbedtls: ssl_msg.c:5211 => parse change cipher spec[0m
+
+[0;32mI (5039) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (5049) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (5049) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (5059) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (5059) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (5069) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (5079) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (5079) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 6[0m
+
+[0;32mI (5089) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 6[0m
+
+[0;32mI (5089) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 1 (-0xffffffff)[0m
+
+[0;32mI (5099) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (5099) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (5109) mbedtls: ssl_msg.c:5259 <= parse change cipher spec[0m
+
+[0;32mI (5109) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (5119) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (5119) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_FINISHED[0m
+
+[0;32mI (5129) mbedtls: ssl_tls.c:8422 => parse finished[0m
+
+[0;32mI (5129) mbedtls: ssl_tls.c:8141 => calc finished tls[0m
+
+[0;32mI (5139) mbedtls: ssl_tls.c:8172 <= calc finished[0m
+
+[0;32mI (5139) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (5149) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (5149) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (5159) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (5159) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (5169) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (5169) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (5179) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 45[0m
+
+[0;32mI (5179) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 45[0m
+
+[0;32mI (5189) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 40 (-0xffffffd8)[0m
+
+[0;32mI (5199) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (5199) mbedtls: ssl_msg.c:1510 => decrypt buf[0m
+
+[0;32mI (5209) mbedtls: ssl_msg.c:2121 <= decrypt buf[0m
+
+[0;32mI (5209) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (5209) mbedtls: ssl_tls.c:8492 <= parse finished[0m
+
+[0;32mI (5219) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (5219) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (5229) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_FLUSH_BUFFERS[0m
+
+[0;32mI (5229) mbedtls: ssl_tls12_client.c:3587 handshake: done[0m
+
+[0;32mI (5239) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (5239) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (5249) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_HANDSHAKE_WRAPUP[0m
+
+[0;32mI (5259) mbedtls: ssl_tls.c:4617 <= handshake[0m
+
+[0;32mI (5259) mbedtls: ssl_msg.c:6053 => write[0m
+
+[0;32mI (5259) mbedtls: ssl_msg.c:2943 => write record[0m
+
+[0;32mI (5269) mbedtls: ssl_msg.c:935 => encrypt buf[0m
+
+[0;32mI (5279) mbedtls: ssl_msg.c:1474 <= encrypt buf[0m
+
+[0;32mI (5279) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (5279) mbedtls: ssl_msg.c:2367 message length: 106, out_left: 106[0m
+
+[0;32mI (5289) mbedtls: ssl_msg.c:2374 ssl->f_send() returned 106 (-0xffffff96)[0m
+
+[0;32mI (5289) mbedtls: ssl_msg.c:2401 <= flush output[0m
+
+[0;32mI (5299) mbedtls: ssl_msg.c:3080 <= write record[0m
+
+[0;32mI (5299) mbedtls: ssl_msg.c:6075 <= write[0m
+
+[0;32mI (5589) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (5589) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (5589) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (5589) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (5599) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (5599) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (5609) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (5619) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (5619) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 617[0m
+
+[0;32mI (5629) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 617[0m
+
+[0;32mI (5629) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 612 (-0xfffffd9c)[0m
+
+[0;32mI (5639) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (5649) mbedtls: ssl_msg.c:1510 => decrypt buf[0m
+
+[0;32mI (5649) mbedtls: ssl_msg.c:2121 <= decrypt buf[0m
+
+[0;32mI (5659) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (5659) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (6009) mbedtls: ssl_tls.c:4606 => handshake[0m
+
+[0;32mI (6009) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (6009) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (6009) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_HELLO_REQUEST[0m
+
+[0;32mI (6019) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (6019) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (6019) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_HELLO[0m
+
+[0;32mI (6029) mbedtls: ssl_client.c:919 => write client hello[0m
+
+[0;32mI (6039) mbedtls: ssl_msg.c:2783 => write handshake message[0m
+
+[0;32mI (6039) mbedtls: ssl_msg.c:2943 => write record[0m
+
+[0;32mI (6049) mbedtls: ssl_msg.c:3080 <= write record[0m
+
+[0;32mI (6049) mbedtls: ssl_msg.c:2904 <= write handshake message[0m
+
+[0;32mI (6059) mbedtls: ssl_client.c:1012 <= write client hello[0m
+
+[0;32mI (6059) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (6069) mbedtls: ssl_msg.c:2367 message length: 250, out_left: 250[0m
+
+[0;32mI (6079) mbedtls: ssl_msg.c:2374 ssl->f_send() returned 250 (-0xffffff06)[0m
+
+[0;32mI (6079) mbedtls: ssl_msg.c:2401 <= flush output[0m
+
+[0;32mI (6079) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_HELLO[0m
+
+[0;32mI (6089) mbedtls: ssl_tls12_client.c:1195 => parse server hello[0m
+
+[0;32mI (6099) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (6099) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (6099) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (6419) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (6419) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (6419) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (6419) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (6429) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 74[0m
+
+[0;32mI (6429) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 74[0m
+
+[0;32mI (6439) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 69 (-0xffffffbb)[0m
+
+[0;32mI (6449) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (6449) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (6459) mbedtls: ssl_tls12_client.c:1447 server hello, total extension length: 25[0m
+
+[0;32mI (6459) mbedtls: ssl_tls12_client.c:1661 <= parse server hello[0m
+
+[0;32mI (6469) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (6469) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (6479) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_CERTIFICATE[0m
+
+[0;32mI (6479) mbedtls: ssl_tls.c:7962 => parse certificate[0m
+
+[0;32mI (6489) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (6489) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (6499) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (6499) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (6509) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (6519) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (6519) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (6519) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 5127[0m
+
+[0;32mI (6529) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 5127[0m
+
+[0;32mI (6539) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5122 (-0xffffebfe)[0m
+
+[0;32mI (6539) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (6579) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (6689) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (6689) mbedtls: ssl_tls.c:8076 <= parse certificate[0m
+
+[0;32mI (6689) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (6699) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (6699) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_KEY_EXCHANGE[0m
+
+[0;32mI (6709) mbedtls: ssl_tls12_client.c:2089 => parse server key exchange[0m
+
+[0;32mI (6709) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (6719) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (6719) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (6729) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (6729) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (6739) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (6749) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (6749) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 305[0m
+
+[0;32mI (6759) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 305[0m
+
+[0;32mI (6759) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 300 (-0xfffffed4)[0m
+
+[0;32mI (6769) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (6769) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (6779) mbedtls: ssl_tls12_client.c:1805 ECDH curve: x25519[0m
+
+[0;32mI (6809) mbedtls: ssl_tls12_client.c:2459 <= parse server key exchange[0m
+
+[0;32mI (6809) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (6809) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (6809) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CERTIFICATE_REQUEST[0m
+
+[0;32mI (6819) mbedtls: ssl_tls12_client.c:2498 => parse certificate request[0m
+
+[0;32mI (6829) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (6829) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (6829) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (6839) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (6839) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (6849) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (6859) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (6859) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 9[0m
+
+[0;32mI (6869) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 9[0m
+
+[0;32mI (6869) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 4 (-0xfffffffc)[0m
+
+[0;32mI (6879) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (6879) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (6889) mbedtls: ssl_tls12_client.c:2660 <= parse certificate request[0m
+
+[0;32mI (6889) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (6899) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (6899) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_HELLO_DONE[0m
+
+[0;32mI (6909) mbedtls: ssl_tls12_client.c:2671 => parse server hello done[0m
+
+[0;32mI (6919) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (6919) mbedtls: ssl_msg.c:4257 reuse previously read message[0m
+
+[0;32mI (6929) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (6929) mbedtls: ssl_tls12_client.c:2699 <= parse server hello done[0m
+
+[0;32mI (6939) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (6939) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (6949) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_CERTIFICATE[0m
+
+[0;32mI (6949) mbedtls: ssl_tls.c:7557 => write certificate[0m
+
+[0;32mI (6959) mbedtls: ssl_tls.c:7568 <= skip write certificate[0m
+
+[0;32mI (6959) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (6969) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (6969) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_KEY_EXCHANGE[0m
+
+[0;32mI (6979) mbedtls: ssl_tls12_client.c:2714 => write client key exchange[0m
+
+[0;32mI (7329) mbedtls: ssl_msg.c:2783 => write handshake message[0m
+
+[0;32mI (7329) mbedtls: ssl_msg.c:2943 => write record[0m
+
+[0;32mI (7329) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (7329) mbedtls: ssl_msg.c:2367 message length: 42, out_left: 42[0m
+
+[0;32mI (7339) mbedtls: ssl_msg.c:2374 ssl->f_send() returned 42 (-0xffffffd6)[0m
+
+[0;32mI (7339) mbedtls: ssl_msg.c:2401 <= flush output[0m
+
+[0;32mI (7349) mbedtls: ssl_msg.c:3080 <= write record[0m
+
+[0;32mI (7349) mbedtls: ssl_msg.c:2904 <= write handshake message[0m
+
+[0;32mI (7359) mbedtls: ssl_tls12_client.c:3209 <= write client key exchange[0m
+
+[0;32mI (7359) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (7369) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (7369) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CERTIFICATE_VERIFY[0m
+
+[0;32mI (7379) mbedtls: ssl_tls12_client.c:3257 => write certificate verify[0m
+
+[0;32mI (7389) mbedtls: ssl_tls.c:7171 => derive keys[0m
+
+[0;32mI (7389) mbedtls: ssl_tls.c:7295 => calc verify[0m
+
+[0;32mI (7399) mbedtls: ssl_tls.c:7314 <= calc verify[0m
+
+[0;32mI (7409) mbedtls: ssl_tls.c:7222 <= derive keys[0m
+
+[0;32mI (7409) mbedtls: ssl_tls12_client.c:3279 <= skip write certificate verify[0m
+
+[0;32mI (7409) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (7409) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (7419) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_CHANGE_CIPHER_SPEC[0m
+
+[0;32mI (7429) mbedtls: ssl_msg.c:5189 => write change cipher spec[0m
+
+[0;32mI (7429) mbedtls: ssl_msg.c:2783 => write handshake message[0m
+
+[0;32mI (7439) mbedtls: ssl_msg.c:2943 => write record[0m
+
+[0;32mI (7439) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (7449) mbedtls: ssl_msg.c:2367 message length: 6, out_left: 6[0m
+
+[0;32mI (7449) mbedtls: ssl_msg.c:2374 ssl->f_send() returned 6 (-0xfffffffa)[0m
+
+[0;32mI (7459) mbedtls: ssl_msg.c:2401 <= flush output[0m
+
+[0;32mI (7459) mbedtls: ssl_msg.c:3080 <= write record[0m
+
+[0;32mI (7469) mbedtls: ssl_msg.c:2904 <= write handshake message[0m
+
+[0;32mI (7469) mbedtls: ssl_msg.c:5202 <= write change cipher spec[0m
+
+[0;32mI (7479) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (7479) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (7489) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_FINISHED[0m
+
+[0;32mI (7489) mbedtls: ssl_tls.c:8307 => write finished[0m
+
+[0;32mI (7499) mbedtls: ssl_tls.c:8141 => calc finished tls[0m
+
+[0;32mI (7509) mbedtls: ssl_tls.c:8172 <= calc finished[0m
+
+[0;32mI (7509) mbedtls: ssl_msg.c:2783 => write handshake message[0m
+
+[0;32mI (7509) mbedtls: ssl_msg.c:2943 => write record[0m
+
+[0;32mI (7519) mbedtls: ssl_msg.c:935 => encrypt buf[0m
+
+[0;32mI (7529) mbedtls: ssl_msg.c:1474 <= encrypt buf[0m
+
+[0;32mI (7529) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (7529) mbedtls: ssl_msg.c:2367 message length: 45, out_left: 45[0m
+
+[0;32mI (7539) mbedtls: ssl_msg.c:2374 ssl->f_send() returned 45 (-0xffffffd3)[0m
+
+[0;32mI (7539) mbedtls: ssl_msg.c:2401 <= flush output[0m
+
+[0;32mI (7549) mbedtls: ssl_msg.c:3080 <= write record[0m
+
+[0;32mI (7549) mbedtls: ssl_msg.c:2904 <= write handshake message[0m
+
+[0;32mI (7559) mbedtls: ssl_tls.c:8409 <= write finished[0m
+
+[0;32mI (7559) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (7569) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (7569) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_CHANGE_CIPHER_SPEC[0m
+
+[0;32mI (7579) mbedtls: ssl_tls12_client.c:3385 => parse new session ticket[0m
+
+[0;32mI (7589) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (7589) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (7599) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (8049) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (8049) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (8049) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (8059) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (8059) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 223[0m
+
+[0;32mI (8069) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 223[0m
+
+[0;32mI (8069) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 218 (-0xffffff26)[0m
+
+[0;32mI (8079) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (8089) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (8089) mbedtls: ssl_tls12_client.c:3479 <= parse new session ticket[0m
+
+[0;32mI (8089) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (8099) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (8099) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_CHANGE_CIPHER_SPEC[0m
+
+[0;32mI (8109) mbedtls: ssl_msg.c:5211 => parse change cipher spec[0m
+
+[0;32mI (8119) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (8119) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (8129) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (8129) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (8139) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (8139) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (8149) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (8149) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 6[0m
+
+[0;32mI (8159) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 6[0m
+
+[0;32mI (8159) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 1 (-0xffffffff)[0m
+
+[0;32mI (8169) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (8169) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (8179) mbedtls: ssl_msg.c:5259 <= parse change cipher spec[0m
+
+[0;32mI (8179) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (8189) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (8189) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_FINISHED[0m
+
+[0;32mI (8199) mbedtls: ssl_tls.c:8422 => parse finished[0m
+
+[0;32mI (8199) mbedtls: ssl_tls.c:8141 => calc finished tls[0m
+
+[0;32mI (8209) mbedtls: ssl_tls.c:8172 <= calc finished[0m
+
+[0;32mI (8209) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (8219) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (8219) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (8229) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (8229) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (8239) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (8249) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (8249) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 45[0m
+
+[0;32mI (8259) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 45[0m
+
+[0;32mI (8259) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 40 (-0xffffffd8)[0m
+
+[0;32mI (8269) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (8269) mbedtls: ssl_msg.c:1510 => decrypt buf[0m
+
+[0;32mI (8279) mbedtls: ssl_msg.c:2121 <= decrypt buf[0m
+
+[0;32mI (8279) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (8289) mbedtls: ssl_tls.c:8492 <= parse finished[0m
+
+[0;32mI (8289) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (8289) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (8299) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_FLUSH_BUFFERS[0m
+
+[0;32mI (8309) mbedtls: ssl_tls12_client.c:3587 handshake: done[0m
+
+[0;32mI (8309) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (8319) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (8319) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_HANDSHAKE_WRAPUP[0m
+
+[0;32mI (8329) mbedtls: ssl_tls.c:4617 <= handshake[0m
+
+[0;32mI (8329) mbedtls: ssl_msg.c:6053 => write[0m
+
+[0;32mI (8329) mbedtls: ssl_msg.c:2943 => write record[0m
+
+[0;32mI (8339) mbedtls: ssl_msg.c:935 => encrypt buf[0m
+
+[0;32mI (8349) mbedtls: ssl_msg.c:1474 <= encrypt buf[0m
+
+[0;32mI (8349) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (8349) mbedtls: ssl_msg.c:2367 message length: 111, out_left: 111[0m
+
+[0;32mI (8359) mbedtls: ssl_msg.c:2374 ssl->f_send() returned 111 (-0xffffff91)[0m
+
+[0;32mI (8369) mbedtls: ssl_msg.c:2401 <= flush output[0m
+
+[0;32mI (8369) mbedtls: ssl_msg.c:3080 <= write record[0m
+
+[0;32mI (8369) mbedtls: ssl_msg.c:6075 <= write[0m
+
+[0;32mI (8669) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (8669) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (8669) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (8669) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (8669) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (8679) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (8689) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (8689) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (8689) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 16413[0m
+
+[0;32mI (8699) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 16413[0m
+
+[0;32mI (8709) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 4955 (-0xffffeca5)[0m
+
+[0;32mI (9079) mbedtls: ssl_msg.c:2315 in_left: 4960, nb_want: 16413[0m
+
+[0;32mI (9079) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 3720 (-0xfffff178)[0m
+
+[0;32mI (9079) mbedtls: ssl_msg.c:2315 in_left: 8680, nb_want: 16413[0m
+
+[0;32mI (9089) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 1240 (-0xfffffb28)[0m
+
+[0;32mI (9249) mbedtls: ssl_msg.c:2315 in_left: 9920, nb_want: 16413[0m
+
+[0;32mI (9259) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 1240 (-0xfffffb28)[0m
+
+[0;32mI (9259) mbedtls: ssl_msg.c:2315 in_left: 11160, nb_want: 16413[0m
+
+[0;32mI (9259) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 3280 (-0xfffff330)[0m
+
+[0;32mI (9479) mbedtls: ssl_msg.c:2315 in_left: 14440, nb_want: 16413[0m
+
+[0;32mI (9479) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 440 (-0xfffffe48)[0m
+
+[0;32mI (9489) mbedtls: ssl_msg.c:2315 in_left: 14880, nb_want: 16413[0m
+
+[0;32mI (9489) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 1533 (-0xfffffa03)[0m
+
+[0;32mI (9499) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (9539) mbedtls: ssl_msg.c:1510 => decrypt buf[0m
+
+[0;32mI (9549) mbedtls: ssl_msg.c:2121 <= decrypt buf[0m
+
+[0;32mI (9579) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (9579) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9589) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9589) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9589) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9589) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9599) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9599) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9599) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9609) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9609) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9619) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9619) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9619) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9629) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9629) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9639) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9639) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9639) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9649) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9649) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9649) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9659) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9659) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9669) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9669) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9669) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9679) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9679) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9689) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9689) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9689) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9699) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9699) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9699) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9709) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9709) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9719) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9719) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9719) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9729) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9729) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9729) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9739) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9739) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9749) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9749) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9749) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9759) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9759) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9769) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9769) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9769) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9779) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9779) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9779) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9789) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9789) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9799) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9799) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9799) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9809) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9809) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9809) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (9819) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (9819) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (9829) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (9829) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (9839) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (9839) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (9849) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (9849) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (9859) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 7100[0m
+
+[0;32mI (9869) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 7100[0m
+
+[0;32mI (9869) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5755 (-0xffffe985)[0m
+
+[0;32mI (10119) mbedtls: ssl_msg.c:2315 in_left: 5760, nb_want: 7100[0m
+
+[0;32mI (10119) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 147 (-0xffffff6d)[0m
+
+[0;32mI (10119) mbedtls: ssl_msg.c:2315 in_left: 5907, nb_want: 7100[0m
+
+[0;32mI (10129) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 1193 (-0xfffffb57)[0m
+
+[0;32mI (10129) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (10169) mbedtls: ssl_msg.c:1510 => decrypt buf[0m
+
+[0;32mI (10179) mbedtls: ssl_msg.c:2121 <= decrypt buf[0m
+
+[0;32mI (10209) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (10209) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (10209) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (10209) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (10219) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (10219) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (10219) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (10229) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (10229) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (10239) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (10239) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (10239) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (10249) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (10249) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (10259) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (10259) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (10259) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (10269) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (10269) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (10279) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (10279) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (10279) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (10289) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (10289) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (10299) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (10299) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (10299) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (10309) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (10309) DOOR_MONITOR: ✅ Alert sent to user 1! Status = 200, Content length = 23173[0m
+[1;31mE (10329) HTTP_CLIENT: Error parse url https://api.telegram.org/bot8147801516:AAGXa3En0T2wQTTtV2APgHGWyMSEyCK_1sE/sendMessage?chat_id=1245560165&text=Hello Mrs Suseendran%2C%20your%20door%20or%20window%20is%20OPEN%21%20Might%20I%20suggest%20increasing%20the%20safety%3F[0m
+[0;32mI (10509) mbedtls: ssl_tls.c:4606 => handshake[0m
+
+[0;32mI (10519) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (10519) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (10519) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_HELLO_REQUEST[0m
+
+[0;32mI (10519) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (10529) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (10529) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_HELLO[0m
+
+[0;32mI (10539) mbedtls: ssl_client.c:919 => write client hello[0m
+
+[0;32mI (10549) mbedtls: ssl_msg.c:2783 => write handshake message[0m
+
+[0;32mI (10549) mbedtls: ssl_msg.c:2943 => write record[0m
+
+[0;32mI (10559) mbedtls: ssl_msg.c:3080 <= write record[0m
+
+[0;32mI (10559) mbedtls: ssl_msg.c:2904 <= write handshake message[0m
+
+[0;32mI (10569) mbedtls: ssl_client.c:1012 <= write client hello[0m
+
+[0;32mI (10569) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (10579) mbedtls: ssl_msg.c:2367 message length: 249, out_left: 249[0m
+
+[0;32mI (10589) mbedtls: ssl_msg.c:2374 ssl->f_send() returned 249 (-0xffffff07)[0m
+
+[0;32mI (10589) mbedtls: ssl_msg.c:2401 <= flush output[0m
+
+[0;32mI (10589) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_HELLO[0m
+
+[0;32mI (10599) mbedtls: ssl_tls12_client.c:1195 => parse server hello[0m
+
+[0;32mI (10609) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (10609) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (10619) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (10919) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (10919) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (10919) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (10919) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (10929) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 74[0m
+
+[0;32mI (10929) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 74[0m
+
+[0;32mI (10939) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 69 (-0xffffffbb)[0m
+
+[0;32mI (10949) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (10949) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (10959) mbedtls: ssl_tls12_client.c:1447 server hello, total extension length: 25[0m
+
+[0;32mI (10959) mbedtls: ssl_tls12_client.c:1661 <= parse server hello[0m
+
+[0;32mI (10969) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (10969) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (10979) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_CERTIFICATE[0m
+
+[0;32mI (10989) mbedtls: ssl_tls.c:7962 => parse certificate[0m
+
+[0;32mI (10989) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (10999) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (10999) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (11009) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (11009) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (11019) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (11019) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (11029) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 5137[0m
+
+[0;32mI (11039) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 5137[0m
+
+[0;32mI (11039) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5132 (-0xffffebf4)[0m
+
+[0;32mI (11049) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (11079) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (11189) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (11199) mbedtls: ssl_tls.c:8076 <= parse certificate[0m
+
+[0;32mI (11199) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (11199) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (11199) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_KEY_EXCHANGE[0m
+
+[0;32mI (11209) mbedtls: ssl_tls12_client.c:2089 => parse server key exchange[0m
+
+[0;32mI (11219) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (11219) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (11229) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (11229) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (11239) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (11239) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (11249) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (11249) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 305[0m
+
+[0;32mI (11259) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 305[0m
+
+[0;32mI (11259) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 300 (-0xfffffed4)[0m
+
+[0;32mI (11269) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (11279) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (11279) mbedtls: ssl_tls12_client.c:1805 ECDH curve: x25519[0m
+
+[0;32mI (11309) mbedtls: ssl_tls12_client.c:2459 <= parse server key exchange[0m
+
+[0;32mI (11309) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (11309) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (11319) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CERTIFICATE_REQUEST[0m
+
+[0;32mI (11319) mbedtls: ssl_tls12_client.c:2498 => parse certificate request[0m
+
+[0;32mI (11329) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (11329) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (11339) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (11339) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (11349) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (11359) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (11359) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (11369) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 9[0m
+
+[0;32mI (11369) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 9[0m
+
+[0;32mI (11379) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 4 (-0xfffffffc)[0m
+
+[0;32mI (11379) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (11389) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (11389) mbedtls: ssl_tls12_client.c:2660 <= parse certificate request[0m
+
+[0;32mI (11399) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (11399) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (11409) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_HELLO_DONE[0m
+
+[0;32mI (11419) mbedtls: ssl_tls12_client.c:2671 => parse server hello done[0m
+
+[0;32mI (11419) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (11429) mbedtls: ssl_msg.c:4257 reuse previously read message[0m
+
+[0;32mI (11429) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (11439) mbedtls: ssl_tls12_client.c:2699 <= parse server hello done[0m
+
+[0;32mI (11439) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (11449) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (11449) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_CERTIFICATE[0m
+
+[0;32mI (11459) mbedtls: ssl_tls.c:7557 => write certificate[0m
+
+[0;32mI (11459) mbedtls: ssl_tls.c:7568 <= skip write certificate[0m
+
+[0;32mI (11469) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (11469) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (11479) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_KEY_EXCHANGE[0m
+
+[0;32mI (11489) mbedtls: ssl_tls12_client.c:2714 => write client key exchange[0m
+
+[0;32mI (11839) mbedtls: ssl_msg.c:2783 => write handshake message[0m
+
+[0;32mI (11839) mbedtls: ssl_msg.c:2943 => write record[0m
+
+[0;32mI (11839) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (11839) mbedtls: ssl_msg.c:2367 message length: 42, out_left: 42[0m
+
+[0;32mI (11849) mbedtls: ssl_msg.c:2374 ssl->f_send() returned 42 (-0xffffffd6)[0m
+
+[0;32mI (11849) mbedtls: ssl_msg.c:2401 <= flush output[0m
+
+[0;32mI (11859) mbedtls: ssl_msg.c:3080 <= write record[0m
+
+[0;32mI (11859) mbedtls: ssl_msg.c:2904 <= write handshake message[0m
+
+[0;32mI (11869) mbedtls: ssl_tls12_client.c:3209 <= write client key exchange[0m
+
+[0;32mI (11879) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (11879) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (11879) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CERTIFICATE_VERIFY[0m
+
+[0;32mI (11889) mbedtls: ssl_tls12_client.c:3257 => write certificate verify[0m
+
+[0;32mI (11899) mbedtls: ssl_tls.c:7171 => derive keys[0m
+
+[0;32mI (11899) mbedtls: ssl_tls.c:7295 => calc verify[0m
+
+[0;32mI (11909) mbedtls: ssl_tls.c:7314 <= calc verify[0m
+
+[0;32mI (11919) mbedtls: ssl_tls.c:7222 <= derive keys[0m
+
+[0;32mI (11919) mbedtls: ssl_tls12_client.c:3279 <= skip write certificate verify[0m
+
+[0;32mI (11919) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (11929) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (11929) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_CHANGE_CIPHER_SPEC[0m
+
+[0;32mI (11939) mbedtls: ssl_msg.c:5189 => write change cipher spec[0m
+
+[0;32mI (11949) mbedtls: ssl_msg.c:2783 => write handshake message[0m
+
+[0;32mI (11949) mbedtls: ssl_msg.c:2943 => write record[0m
+
+[0;32mI (11959) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (11959) mbedtls: ssl_msg.c:2367 message length: 6, out_left: 6[0m
+
+[0;32mI (11969) mbedtls: ssl_msg.c:2374 ssl->f_send() returned 6 (-0xfffffffa)[0m
+
+[0;32mI (11969) mbedtls: ssl_msg.c:2401 <= flush output[0m
+
+[0;32mI (11979) mbedtls: ssl_msg.c:3080 <= write record[0m
+
+[0;32mI (11979) mbedtls: ssl_msg.c:2904 <= write handshake message[0m
+
+[0;32mI (11989) mbedtls: ssl_msg.c:5202 <= write change cipher spec[0m
+
+[0;32mI (11989) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (11999) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (11999) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_FINISHED[0m
+
+[0;32mI (12009) mbedtls: ssl_tls.c:8307 => write finished[0m
+
+[0;32mI (12009) mbedtls: ssl_tls.c:8141 => calc finished tls[0m
+
+[0;32mI (12019) mbedtls: ssl_tls.c:8172 <= calc finished[0m
+
+[0;32mI (12019) mbedtls: ssl_msg.c:2783 => write handshake message[0m
+
+[0;32mI (12029) mbedtls: ssl_msg.c:2943 => write record[0m
+
+[0;32mI (12029) mbedtls: ssl_msg.c:935 => encrypt buf[0m
+
+[0;32mI (12039) mbedtls: ssl_msg.c:1474 <= encrypt buf[0m
+
+[0;32mI (12039) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (12049) mbedtls: ssl_msg.c:2367 message length: 45, out_left: 45[0m
+
+[0;32mI (12049) mbedtls: ssl_msg.c:2374 ssl->f_send() returned 45 (-0xffffffd3)[0m
+
+[0;32mI (12059) mbedtls: ssl_msg.c:2401 <= flush output[0m
+
+[0;32mI (12059) mbedtls: ssl_msg.c:3080 <= write record[0m
+
+[0;32mI (12069) mbedtls: ssl_msg.c:2904 <= write handshake message[0m
+
+[0;32mI (12069) mbedtls: ssl_tls.c:8409 <= write finished[0m
+
+[0;32mI (12079) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (12079) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (12089) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_CHANGE_CIPHER_SPEC[0m
+
+[0;32mI (12099) mbedtls: ssl_tls12_client.c:3385 => parse new session ticket[0m
+
+[0;32mI (12099) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (12109) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (12109) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (12349) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (12349) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (12359) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (12359) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (12359) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 223[0m
+
+[0;32mI (12369) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 223[0m
+
+[0;32mI (12379) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 218 (-0xffffff26)[0m
+
+[0;32mI (12379) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (12389) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (12389) mbedtls: ssl_tls12_client.c:3479 <= parse new session ticket[0m
+
+[0;32mI (12399) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (12399) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (12409) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_CHANGE_CIPHER_SPEC[0m
+
+[0;32mI (12419) mbedtls: ssl_msg.c:5211 => parse change cipher spec[0m
+
+[0;32mI (12419) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (12429) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (12429) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (12439) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (12439) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (12449) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (12449) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (12459) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 6[0m
+
+[0;32mI (12459) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 6[0m
+
+[0;32mI (12469) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 1 (-0xffffffff)[0m
+
+[0;32mI (12469) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (12479) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (12479) mbedtls: ssl_msg.c:5259 <= parse change cipher spec[0m
+
+[0;32mI (12489) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (12489) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (12499) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_FINISHED[0m
+
+[0;32mI (12509) mbedtls: ssl_tls.c:8422 => parse finished[0m
+
+[0;32mI (12509) mbedtls: ssl_tls.c:8141 => calc finished tls[0m
+
+[0;32mI (12519) mbedtls: ssl_tls.c:8172 <= calc finished[0m
+
+[0;32mI (12519) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (12519) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (12529) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (12529) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (12539) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (12549) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (12549) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (12559) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 45[0m
+
+[0;32mI (12559) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 45[0m
+
+[0;32mI (12569) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 40 (-0xffffffd8)[0m
+
+[0;32mI (12569) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (12579) mbedtls: ssl_msg.c:1510 => decrypt buf[0m
+
+[0;32mI (12579) mbedtls: ssl_msg.c:2121 <= decrypt buf[0m
+
+[0;32mI (12589) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (12589) mbedtls: ssl_tls.c:8492 <= parse finished[0m
+
+[0;32mI (12599) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (12599) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (12609) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_FLUSH_BUFFERS[0m
+
+[0;32mI (12609) mbedtls: ssl_tls12_client.c:3587 handshake: done[0m
+
+[0;32mI (12619) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (12619) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (12629) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_HANDSHAKE_WRAPUP[0m
+
+[0;32mI (12629) mbedtls: ssl_tls.c:4617 <= handshake[0m
+
+[0;32mI (12639) mbedtls: ssl_msg.c:6053 => write[0m
+
+[0;32mI (12639) mbedtls: ssl_msg.c:2943 => write record[0m
+
+[0;32mI (12649) mbedtls: ssl_msg.c:935 => encrypt buf[0m
+
+[0;32mI (12649) mbedtls: ssl_msg.c:1474 <= encrypt buf[0m
+
+[0;32mI (12659) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (12659) mbedtls: ssl_msg.c:2367 message length: 106, out_left: 106[0m
+
+[0;32mI (12669) mbedtls: ssl_msg.c:2374 ssl->f_send() returned 106 (-0xffffff96)[0m
+
+[0;32mI (12669) mbedtls: ssl_msg.c:2401 <= flush output[0m
+
+[0;32mI (12679) mbedtls: ssl_msg.c:3080 <= write record[0m
+
+[0;32mI (12679) mbedtls: ssl_msg.c:6075 <= write[0m
+
+[0;32mI (12969) mbedtls: ssl_msg.c:5791 => read[0m
+
+[0;32mI (12969) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (12969) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (12969) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (12979) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (12979) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (12989) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (12989) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (12999) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 617[0m
+
+[0;32mI (12999) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 617[0m
+
+[0;32mI (13009) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 612 (-0xfffffd9c)[0m
+
+[0;32mI (13019) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (13029) mbedtls: ssl_msg.c:1510 => decrypt buf[0m
+
+[0;32mI (13029) mbedtls: ssl_msg.c:2121 <= decrypt buf[0m
+
+[0;32mI (13029) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (13029) mbedtls: ssl_msg.c:5951 <= read[0m
+
+[0;32mI (13379) mbedtls: ssl_tls.c:4606 => handshake[0m
+
+[0;32mI (13379) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (13379) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (13379) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_HELLO_REQUEST[0m
+
+[0;32mI (13389) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (13399) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (13399) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_HELLO[0m
+
+[0;32mI (13409) mbedtls: ssl_client.c:919 => write client hello[0m
+
+[0;32mI (13419) mbedtls: ssl_msg.c:2783 => write handshake message[0m
+
+[0;32mI (13419) mbedtls: ssl_msg.c:2943 => write record[0m
+
+[0;32mI (13419) mbedtls: ssl_msg.c:3080 <= write record[0m
+
+[0;32mI (13429) mbedtls: ssl_msg.c:2904 <= write handshake message[0m
+
+[0;32mI (13429) mbedtls: ssl_client.c:1012 <= write client hello[0m
+
+[0;32mI (13439) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (13439) mbedtls: ssl_msg.c:2367 message length: 250, out_left: 250[0m
+
+[0;32mI (13449) mbedtls: ssl_msg.c:2374 ssl->f_send() returned 250 (-0xffffff06)[0m
+
+[0;32mI (13459) mbedtls: ssl_msg.c:2401 <= flush output[0m
+
+[0;32mI (13459) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_HELLO[0m
+
+[0;32mI (13469) mbedtls: ssl_tls12_client.c:1195 => parse server hello[0m
+
+[0;32mI (13469) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (13479) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (13479) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (13789) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (13789) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (13789) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (13789) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (13799) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 74[0m
+
+[0;32mI (13799) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 74[0m
+
+[0;32mI (13809) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 69 (-0xffffffbb)[0m
+
+[0;32mI (13819) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (13819) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (13829) mbedtls: ssl_tls12_client.c:1447 server hello, total extension length: 25[0m
+
+[0;32mI (13829) mbedtls: ssl_tls12_client.c:1661 <= parse server hello[0m
+
+[0;32mI (13839) mbedtls: ssl_msg.c:2353 => flush output[0m
+
+[0;32mI (13839) mbedtls: ssl_msg.c:2362 <= flush output[0m
+
+[0;32mI (13849) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_CERTIFICATE[0m
+
+[0;32mI (13859) mbedtls: ssl_tls.c:7962 => parse certificate[0m
+
+[0;32mI (13859) mbedtls: ssl_msg.c:4189 => read record[0m
+
+[0;32mI (13869) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (13869) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5[0m
+
+[0;32mI (13879) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5[0m
+
+[0;32mI (13879) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)[0m
+
+[0;32mI (13889) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (13889) mbedtls: ssl_msg.c:2155 => fetch input[0m
+
+[0;32mI (13899) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 5127[0m
+
+[0;32mI (13909) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 5127[0m
+
+[0;32mI (13909) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5122 (-0xffffebfe)[0m
+
+[0;32mI (13919) mbedtls: ssl_msg.c:2340 <= fetch input[0m
+
+[0;32mI (13949) mbedtls: ssl_msg.c:4261 <= read record[0m
+
+[0;32mI (14059) esp-x509-crt-bundle: Certificate validated[0m

@@ -1,0 +1,217 @@
+0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 rooets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1-1-g65c3296662-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 21 2025 00:47:29[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (41) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (55) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (68) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=33d9ch (212380) map[0m
+[0;32mI (164) esp_image: segment 1: paddr=00043dc4 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=00043de8 vaddr=3ffb0000 size=03f20h ( 16160) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00047d10 vaddr=40080000 size=08308h ( 33544) load[0m
+[0;32mI (189) esp_image: segment 4: paddr=00050020 vaddr=400d0020 size=a65bch (681404) map[0m
+[0;32mI (422) esp_image: segment 5: paddr=000f65e4 vaddr=40088308 size=0f490h ( 62608) load[0m
+[0;32mI (457) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (458) boot: Disabling RNG early entropy source...[0m
+[0;32mI (468) cpu_start: Multicore app[0m
+[0;32mI (476) cpu_start: Pro cpu start user code[0m
+[0;32mI (476) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (476) app_init: Application information:[0m
+[0;32mI (477) app_init: Project name:     door_monitor[0m
+[0;32mI (481) app_init: App version:      v5.4.1-1-g65c3296662-dirty[0m
+[0;32mI (486) app_init: Compile time:     Jul 21 2025 21:20:39[0m
+[0;32mI (491) app_init: ELF file SHA256:  04beb99b8...[0m
+[0;32mI (496) app_init: ESP-IDF:          v5.4.1-1-g65c3296662-dirty[0m
+[0;32mI (501) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (505) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (509) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (513) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (519) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (524) heap_init: At 3FFB87C8 len 00027838 (158 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (535) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (541) heap_init: At 40097798 len 00008868 (34 KiB): IRAM[0m
+[0;32mI (547) spi_flash: detected chip: generic[0m
+[0;32mI (549) spi_flash: flash io: dio[0m
+[0;33mW (552) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (566) main_task: Started on CPU0[0m
+[0;32mI (576) main_task: Calling app_main()[0m
+[0;32mI (606) wifi:wifi driver task: 3ffc19c8, prio:23, stack:6656, core=0[0m
+[0;32mI (616) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (616) wifi:wifi certification version: v7.0[0m
+[0;32mI (616) wifi:config NVS flash: enabled[0m
+[0;32mI (616) wifi:config nano formatting: disabled[0m
+[0;32mI (626) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (626) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (626) wifi:Init management short buffer num: 32[0m
+[0;32mI (636) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (636) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (646) wifi:Init static rx buffer num: 10[0m
+[0;32mI (646) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (656) wifi_init: rx ba win: 6[0m
+[0;32mI (656) wifi_init: accept mbox: 6[0m
+[0;32mI (656) wifi_init: tcpip mbox: 32[0m
+[0;32mI (656) wifi_init: udp mbox: 6[0m
+[0;32mI (666) wifi_init: tcp mbox: 6[0m
+[0;32mI (666) wifi_init: tcp tx win: 5760[0m
+[0;32mI (666) wifi_init: tcp rx win: 5760[0m
+[0;32mI (666) wifi_init: tcp mss: 1440[0m
+[0;32mI (676) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (676) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (686) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (766) wifi:mode : sta (f4:65:0b:46:b0:cc)[0m
+[0;32mI (766) wifi:enable tsf[0m
+[0;32mI (3226) esp_netif_handlers: sta ip: 192.168.0.39, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (3226) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3226) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;33mW (3236) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (11296) esp-x509-crt-bundle: Certificate validated[0m
+[0;33mW (15306) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (19296) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (21076) esp-x509-crt-bundle: Certificate validated[0m
+[0;33mW (23526) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (23876) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (24786) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (25126) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (25736) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (26176) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (26336) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (26566) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (26666) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (26826) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (26976) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (27096) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (27246) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (27346) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (27486) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (27586) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (27716) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (27816) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (27926) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (28016) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (28126) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (28226) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (28336) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (28436) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (28566) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (28646) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (28766) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (28846) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (28946) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (29016) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (29106) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (29166) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (29266) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (29346) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (29436) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (29506) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (29586) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (29646) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (29736) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (29806) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (29886) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (29946) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (30026) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (30096) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (30166) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (30236) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (30316) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (30396) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (30456) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (30516) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (31106) esp-x509-crt-bundle: Certificate validated[0m
+[0;33mW (32686) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (32756) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (32836) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (32896) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (32956) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (33036) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (33096) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (33176) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (33236) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (33296) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (33376) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (33446) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (33546) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (33606) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (33706) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (33766) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (33856) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (33916) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (34016) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (34056) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (34156) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (34196) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (34716) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (34786) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (34876) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (34946) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (35056) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (35116) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (35226) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (35286) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (35396) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (35466) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (35566) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (35626) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (35756) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (35796) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (35916) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (35956) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (36076) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (36116) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (42966) esp-x509-crt-bundle: Certificate validated[0m
+[0;33mW (44516) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (45166) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (45686) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (46056) DOOR_MONITOR: Door/Window is OPEN[0m
+[1;31mE (53566) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (53566) esp-tls: Failed to open new connection[0m
+[1;31mE (53566) transport_base: Failed to open a new connection[0m
+[1;31mE (53566) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (61426) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (71246) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (81076) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (91316) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (101356) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (111306) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (121316) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (132896) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (141096) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (151136) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (161476) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (171196) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (181206) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (191266) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (201116) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (211336) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (221176) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (231196) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (241236) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (251066) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (261096) esp-x509-crt-bundle: Certificate validated[0m

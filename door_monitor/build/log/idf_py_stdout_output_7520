@@ -1,0 +1,283 @@
+FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+loa�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1-1-g65c3296662-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 21 2025 00:47:29[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (41) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (55) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (68) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=19848h (104520) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=00029870 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=00029894 vaddr=3ffb0000 size=03f60h ( 16224) load[0m
+[0;32mI (137) esp_image: segment 3: paddr=0002d7fc vaddr=40080000 size=0281ch ( 10268) load[0m
+[0;32mI (143) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=88a7ch (559740) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b8aa4 vaddr=4008281c size=14fa4h ( 85924) load[0m
+[0;32mI (382) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (382) boot: Disabling RNG early entropy source...[0m
+[0;32mI (393) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu start user code[0m
+[0;32mI (401) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (401) app_init: Application information:[0m
+[0;32mI (401) app_init: Project name:     door_monitor[0m
+[0;32mI (406) app_init: App version:      v5.4.1-1-g65c3296662-dirty[0m
+[0;32mI (411) app_init: Compile time:     Jul 21 2025 21:20:39[0m
+[0;32mI (416) app_init: ELF file SHA256:  bbe82ceb2...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.4.1-1-g65c3296662-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (430) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (434) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB8750 len 000278B0 (158 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 400977C0 len 00008840 (34 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (490) main_task: Started on CPU0[0m
+[0;32mI (500) main_task: Calling app_main()[0m
+[0;32mI (530) wifi:wifi driver task: 3ffc1950, prio:23, stack:6656, core=0[0m
+[0;32mI (540) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (540) wifi:wifi certification version: v7.0[0m
+[0;32mI (540) wifi:config NVS flash: enabled[0m
+[0;32mI (540) wifi:config nano formatting: disabled[0m
+[0;32mI (550) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (550) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (550) wifi:Init management short buffer num: 32[0m
+[0;32mI (560) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (560) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (570) wifi:Init static rx buffer num: 10[0m
+[0;32mI (570) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (580) wifi_init: rx ba win: 6[0m
+[0;32mI (580) wifi_init: accept mbox: 6[0m
+[0;32mI (580) wifi_init: tcpip mbox: 32[0m
+[0;32mI (580) wifi_init: udp mbox: 6[0m
+[0;32mI (590) wifi_init: tcp mbox: 6[0m
+[0;32mI (590) wifi_init: tcp tx win: 5760[0m
+[0;32mI (590) wifi_init: tcp rx win: 5760[0m
+[0;32mI (600) wifi_init: tcp mss: 1440[0m
+[0;32mI (600) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (600) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (610) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (690) wifi:mode : sta (f4:65:0b:46:b0:cc)[0m
+[0;32mI (690) wifi:enable tsf[0m
+[0;32mI (3980) esp_netif_handlers: sta ip: 192.168.0.39, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (3980) DOOR_MONITOR: Waiting for time sync...[0m
+[0;32mI (4980) DOOR_MONITOR: Waiting for time sync...[0m
+[0;32mI (5980) DOOR_MONITOR: Waiting for time sync...[0m
+[0;32mI (6980) DOOR_MONITOR: Waiting for time sync...[0m
+[0;32mI (7980) DOOR_MONITOR: Waiting for time sync...[0m
+[0;32mI (8980) DOOR_MONITOR: Waiting for time sync...[0m
+[0;32mI (9980) DOOR_MONITOR: Waiting for time sync...[0m
+[0;32mI (10980) DOOR_MONITOR: Waiting for time sync...[0m
+[0;32mI (11980) DOOR_MONITOR: Waiting for time sync...[0m
+[0;32mI (12980) DOOR_MONITOR: Waiting for time sync...[0m
+[0;32mI (13980) DOOR_MONITOR: Waiting for time sync...[0m
+[0;32mI (14980) DOOR_MONITOR: Waiting for time sync...[0m
+[0;32mI (15980) DOOR_MONITOR: Waiting for time sync...[0m
+[0;32mI (16980) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (16980) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;33mW (22450) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (24190) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (25170) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (27620) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (28970) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (34560) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (35490) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (35980) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (36460) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (36870) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (37240) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (37600) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (37960) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (38880) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (39390) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (39840) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (40250) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (40700) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (41050) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (41360) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (41590) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (41860) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (42070) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (42360) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (42550) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (42840) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (43340) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (43460) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (43620) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (44090) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (44210) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (44370) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (44480) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (44620) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (44720) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (44850) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (44970) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (45080) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (45220) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (45350) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (45460) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (45600) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (45660) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (45820) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (45910) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (46050) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (46150) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (46280) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (46390) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (46500) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (46620) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (46750) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (46850) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (46970) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (47080) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (47210) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (47300) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (47450) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (47560) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (47680) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (47810) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (47910) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (48050) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (48150) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (48270) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (48420) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (48500) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (48960) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (49130) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (49250) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (49360) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (49450) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (49540) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (49630) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (49720) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (55360) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (55660) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (57260) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (57740) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (58010) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (58760) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (59070) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (59340) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (60140) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (60290) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (62820) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (62920) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (63110) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (64160) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (65230) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (66400) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;33mW (69290) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (71190) DOOR_MONITOR: Door/Window is OPEN[0m
+PI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1-1-g65c3296662-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 21 2025 00:47:29[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (41) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (55) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (68) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=19848h (104520) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=00029870 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=00029894 vaddr=3ffb0000 size=03f60h ( 16224) load[0m
+[0;32mI (137) esp_image: segment 3: paddr=0002d7fc vaddr=40080000 size=0281ch ( 10268) load[0m
+[0;32mI (143) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=88a7ch (559740) map[0m
+[0;32mI (338) esp_image: segment 5: paddr=000b8aa4 vaddr=4008281c size=14fa4h ( 85924) load[0m
+[0;32mI (382) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (382) boot: Disabling RNG early entropy source...[0m
+[0;32mI (393) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu start user code[0m
+[0;32mI (401) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (401) app_init: Application information:[0m
+[0;32mI (401) app_init: Project name:     door_monitor[0m
+[0;32mI (406) app_init: App version:      v5.4.1-1-g65c3296662-dirty[0m
+[0;32mI (411) app_init: Compile time:     Jul 21 2025 21:20:39[0m
+[0;32mI (416) app_init: ELF file SHA256:  bbe82ceb2...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.4.1-1-g65c3296662-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (430) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (434) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB8750 len 000278B0 (158 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 400977C0 len 00008840 (34 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (490) main_task: Started on CPU0[0m
+[0;32mI (500) main_task: Calling app_main()[0m
+[0;32mI (530) wifi:wifi driver task: 3ffc1950, prio:23, stack:6656, core=0[0m
+[0;32mI (540) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (540) wifi:wifi certification version: v7.0[0m
+[0;32mI (540) wifi:config NVS flash: enabled[0m
+[0;32mI (540) wifi:config nano formatting: disabled[0m
+[0;32mI (550) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (550) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (550) wifi:Init management short buffer num: 32[0m
+[0;32mI (560) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (560) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (570) wifi:Init static rx buffer num: 10[0m
+[0;32mI (570) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (580) wifi_init: rx ba win: 6[0m
+[0;32mI (580) wifi_init: accept mbox: 6[0m
+[0;32mI (580) wifi_init: tcpip mbox: 32[0m
+[0;32mI (580) wifi_init: udp mbox: 6[0m
+[0;32mI (590) wifi_init: tcp mbox: 6[0m
+[0;32mI (590) wifi_init: tcp tx win: 5760[0m
+[0;32mI (590) wifi_init: tcp rx win: 5760[0m
+[0;32mI (600) wifi_init: tcp mss: 1440[0m
+[0;32mI (600) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (600) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (610) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (690) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (750) wifi:mode : sta (f4:65:0b:46:b0:cc)[0m
+[0;32mI (750) wifi:enable tsf[0m
+[0;32mI (4960) esp_netif_handlers: sta ip: 192.168.0.39, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (4960) DOOR_MONITOR: Waiting for time sync...[0m
+[0;32mI (5960) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (5960) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;33mW (5960) DOOR_MONITOR: Door/Window is OPEN[0m

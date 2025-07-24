@@ -1,0 +1,2 @@
+source C:/Espressif/frameworks/esp-idf-v5.4.1/door_monitor/build/bootloader/gdbinit/symbols
+source C:/Espressif/frameworks/esp-idf-v5.4.1/door_monitor/build/bootloader/gdbinit/connect

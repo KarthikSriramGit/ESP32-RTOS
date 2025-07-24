@@ -1,0 +1,877 @@
+0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 rooets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1-1-g65c3296662-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 21 2025 00:47:29[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (41) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (55) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (68) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=34854h (215124) map[0m
+[0;32mI (165) esp_image: segment 1: paddr=0004487c vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (165) esp_image: segment 2: paddr=000448a0 vaddr=3ffb0000 size=03f78h ( 16248) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00048820 vaddr=40080000 size=077f8h ( 30712) load[0m
+[0;32mI (189) esp_image: segment 4: paddr=00050020 vaddr=400d0020 size=a7b88h (686984) map[0m
+[0;32mI (423) esp_image: segment 5: paddr=000f7bb0 vaddr=400877f8 size=101c4h ( 65988) load[0m
+[0;32mI (461) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (461) boot: Disabling RNG early entropy source...[0m
+[0;32mI (471) cpu_start: Multicore app[0m
+[0;32mI (479) cpu_start: Pro cpu start user code[0m
+[0;32mI (480) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (480) app_init: Application information:[0m
+[0;32mI (480) app_init: Project name:     door_monitor[0m
+[0;32mI (484) app_init: App version:      v5.4.1-1-g65c3296662-dirty[0m
+[0;32mI (490) app_init: Compile time:     Jul 21 2025 01:03:28[0m
+[0;32mI (495) app_init: ELF file SHA256:  4c7911dad...[0m
+[0;32mI (499) app_init: ESP-IDF:          v5.4.1-1-g65c3296662-dirty[0m
+[0;32mI (504) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (508) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (512) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (516) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (523) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (527) heap_init: At 3FFB8870 len 00027790 (157 KiB): DRAM[0m
+[0;32mI (533) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (538) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (544) heap_init: At 400979BC len 00008644 (33 KiB): IRAM[0m
+[0;32mI (550) spi_flash: detected chip: generic[0m
+[0;32mI (553) spi_flash: flash io: dio[0m
+[0;33mW (556) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (569) main_task: Started on CPU0[0m
+[0;32mI (579) main_task: Calling app_main()[0m
+[0;32mI (609) wifi:wifi driver task: 3ffc19ec, prio:23, stack:6656, core=0[0m
+[0;32mI (619) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (619) wifi:wifi certification version: v7.0[0m
+[0;32mI (619) wifi:config NVS flash: enabled[0m
+[0;32mI (619) wifi:config nano formatting: disabled[0m
+[0;32mI (629) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (629) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (629) wifi:Init management short buffer num: 32[0m
+[0;32mI (639) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (639) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (649) wifi:Init static rx buffer num: 10[0m
+[0;32mI (649) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (659) wifi_init: rx ba win: 6[0m
+[0;32mI (659) wifi_init: accept mbox: 6[0m
+[0;32mI (659) wifi_init: tcpip mbox: 32[0m
+[0;32mI (659) wifi_init: udp mbox: 6[0m
+[0;32mI (669) wifi_init: tcp mbox: 6[0m
+[0;32mI (669) wifi_init: tcp tx win: 5760[0m
+[0;32mI (669) wifi_init: tcp rx win: 5760[0m
+[0;32mI (679) wifi_init: tcp mss: 1440[0m
+[0;32mI (679) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (679) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (689) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (769) wifi:mode : sta (f4:65:0b:46:b0:cc)[0m
+[0;32mI (779) wifi:enable tsf[0m
+[0;32mI (779) DOOR_MONITOR: 📡 Connecting to Wi-Fi...[0m
+[0;32mI (819) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (819) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (829) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (839) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (859) wifi:<ba-add>idx:0 (ifx:0, 6c:cd:d6:77:6c:77), tid:5, ssn:0, winSize:64[0m
+[0;32mI (889) wifi:connected with Ace & King of Hearts, aid = 4, channel 1, BW20, bssid = 6c:cd:d6:77:6c:77[0m
+[0;32mI (889) wifi:security: WPA2-PSK, phy: bgn, rssi: -80[0m
+[0;32mI (899) wifi:pm start, type: 1[0m
+
+[0;32mI (899) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (919) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (919) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (929) wifi:<ba-add>idx:1 (ifx:0, 6c:cd:d6:77:6c:77), tid:0, ssn:0, winSize:64[0m
+[0;32mI (3049) esp_netif_handlers: sta ip: 192.168.0.39, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (3049) DOOR_MONITOR: ✅ Wi-Fi connected![0m
+[0;32mI (3049) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3059) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3059) DOOR_MONITOR: GPIOs configured for sensor and LED[0m
+[0;32mI (3079) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (3589) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (3599) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (4099) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (4599) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (5099) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (5599) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (6099) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (6609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (6669) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (7109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (7609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (8109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (8609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (9039) esp-tls: Failed to open new connection in specified timeout[0m
+[1;31mE (9039) transport_base: Failed to open a new connection[0m
+[1;31mE (9039) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (9109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (9609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (10109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (10609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (10739) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (11109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (11609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (12109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (12609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (13109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (13609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (14049) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (14109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (14609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (15109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (15609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (16109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (16609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (17109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (17609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (17649) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (18109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (18609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (19109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (19609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (20109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (20609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (21109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (21249) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (21609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (22109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (22609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (23109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (23609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (24109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (24109) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (24609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (25109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (25609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (26109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (26609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (27109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (27579) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (27609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (28109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (28609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (29109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (29609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (30109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (30609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (30659) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (31109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (31609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (32109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (32609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (33109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (33609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (34099) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (34109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (34609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (35109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (35609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (36109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (36609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (37109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (37409) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (37679) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (38179) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (38679) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (39179) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (39679) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (40179) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (40499) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (40679) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (41179) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (41679) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (42179) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (42679) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (43179) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (43539) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (43679) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (44179) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (44679) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (45179) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (45679) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (46179) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (46679) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (47039) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (47179) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (47679) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (48179) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (48679) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (49179) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (49679) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (50179) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (50299) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (50679) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (51179) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (51679) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (52179) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (52679) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (53179) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (53579) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (53679) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (54179) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (54679) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (55179) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (55679) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (56179) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (56669) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (56679) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (57179) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (57679) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (58189) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (58689) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (59189) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (59699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (59929) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (60199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (60699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (61199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (61699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (62199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (62699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (62899) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (63199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (63699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (64199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (64699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (65199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (65659) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (65699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (66199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (66699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (67199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (67699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (68199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (68509) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (68699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (69199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (69699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (70199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (70699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (71199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (71379) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (71699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (72199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (72699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (73199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (73699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (74199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (74459) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (74699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (75199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (75699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (76199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (76699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (77199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (77319) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (77699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (78199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (78699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (79199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (79699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (80189) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (80199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (80699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (81199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (81699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (82199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (82699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (83059) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (83199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (83699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (84199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (84699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (85199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (85699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (85919) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (86199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (86699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (87199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (87699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (88199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (88699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (88799) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (89199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (89699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (90199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (90699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (91199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (91669) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (91699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (92199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (92699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (93199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (93699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (94199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (94699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (95149) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (95439) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (95939) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (96439) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (96939) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (97439) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (97939) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (98439) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (98619) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (98939) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (99439) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (99939) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (100439) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (100939) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (101439) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (101699) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (101939) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (102439) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (102939) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (103439) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (103939) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (104439) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (104789) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (104939) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (105439) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (105939) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (106439) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (106939) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (107439) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (107629) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (107939) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (108439) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (108939) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (109439) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (109939) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (110519) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (110589) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (111089) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (111589) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (112089) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (112589) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (113089) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (113569) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (113939) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (114439) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (114939) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (115439) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (115939) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (116439) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (116849) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (116939) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (117439) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (117939) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (118439) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (118939) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (119439) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (119939) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (120329) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (120439) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (120939) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (121439) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (121939) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (122439) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (122939) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (123439) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (124019) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (124109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (124609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (125109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (125609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (126109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (126609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (127099) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (127109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (127609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (128109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (128609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (129109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (129609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (129959) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (130109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (130609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (131109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (131609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (132109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (132609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (133029) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (133109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (133609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (134109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (134609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (135109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (135609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (136109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (136609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (137109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (137609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (138109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (138139) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (138609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (139109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (139609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (140109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (140609) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (141109) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (141319) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (141689) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (142189) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (142689) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (143189) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (143689) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (144189) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (144689) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (145149) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (145199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (145699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (146199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (146699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (147199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (147519) esp-tls: Failed to open new connection in specified timeout[0m
+[1;31mE (147519) transport_base: Failed to open a new connection[0m
+[1;31mE (147519) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (147699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (148199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (148699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (149199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (149219) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (149699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (150199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (150699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (151199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (151699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (152089) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (152199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (152699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (153199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (153699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (154199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (154699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (154959) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (155199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (155699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (156199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (156699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (157199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (157699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (158019) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (158199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (158699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (159199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (159699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (160199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (160699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (160899) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (161199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (161699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (162199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (162699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (163199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (163699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (163959) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (164199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (164699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (165199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (165699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (166199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (166699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (166829) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (167199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (167699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (168199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (168699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (169199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (169699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (170099) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (170199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (170699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (171199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (171699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (172199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (172699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (173199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (173389) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (173699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (174199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (174699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (175199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (175699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (176199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (176449) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (176699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (177199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (177699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (178199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (178699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (179199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (179699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (180199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (180249) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (180699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (181199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (181699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (182199) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (182699) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (183209) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (183359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (183859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (184359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (184859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (185359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (185859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (186289) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (186359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (186859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (187359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (187859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (188359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (188859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (189169) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (189359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (189859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (190359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (190859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (191359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (191859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (192009) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (192359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (192859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (193359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (193859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (194359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (194859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (194879) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (195359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (195859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (196359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (196859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (197359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (197759) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (197859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (198359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (198859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (199359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (199859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (200359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (200629) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (200859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (201359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (201859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (202359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (202859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (203359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (203589) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (203959) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (204459) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (204959) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (205459) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (205959) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (206459) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (206749) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (206959) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (207459) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (207959) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (208459) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (208959) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (209459) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (209839) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (209959) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (210459) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (210959) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (211459) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (211959) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (212459) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (212699) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (212959) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (213459) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (213959) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (214459) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (214959) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (215459) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (215569) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (215959) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (216459) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (216959) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (217459) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (217959) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (218459) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (218899) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (218959) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (219459) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (219959) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (220459) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (220959) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (221459) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (221719) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (221959) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (222459) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (222959) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (223459) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (223959) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (224459) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (224579) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (224959) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (225459) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (225959) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (226459) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (226959) esp-tls: Failed to open new connection in specified timeout[0m
+[1;31mE (226959) transport_base: Failed to open a new connection[0m
+[1;31mE (226959) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (226959) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (227469) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (227969) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (228469) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (228489) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (228969) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (229469) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (229969) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (230469) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (230859) esp-tls: Failed to open new connection in specified timeout[0m
+[1;31mE (230859) transport_base: Failed to open a new connection[0m
+[1;31mE (230859) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (230969) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (231469) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (231969) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (232469) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (232969) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (233469) DOOR_MONITOR: Door/Window is CLOSED[0m
+[1;31mE (233869) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (233869) esp-tls: Failed to open new connection[0m
+[1;31mE (233869) transport_base: Failed to open a new connection[0m
+[1;31mE (233869) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (233969) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (234469) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (234969) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (235469) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (235649) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (235969) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (236469) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (236969) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (237469) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (237969) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (238469) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (238969) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (239449) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (239469) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (239969) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (240469) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (240969) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (241469) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (241969) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (242469) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;33mW (242499) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;32mI (242969) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (243469) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (243969) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (244039) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (244469) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (244969) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (245469) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (245969) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (246469) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (246969) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (247109) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (247489) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (247989) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (248489) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (248989) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (249489) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (249989) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (250169) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (250529) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (251029) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (251529) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (252029) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (252529) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (253029) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (253029) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (253529) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (254029) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (254529) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (255029) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (255529) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (255899) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (256279) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (256779) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (257279) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (257779) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (258279) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (258779) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (258969) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (259279) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (259779) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (260279) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (260779) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (261279) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (261779) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (261839) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (262279) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (262779) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (263279) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (263779) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (264279) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (264709) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (264779) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (265279) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (265779) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (266279) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (266779) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (267279) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (267779) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (267979) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (268279) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (268779) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (269279) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (269779) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (270279) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (270779) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (270849) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (271279) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (271789) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (272289) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (272789) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (273289) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (273719) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (273789) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (274289) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (274789) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (275289) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (275789) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (276289) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (276789) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (276789) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (277289) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (277789) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (278289) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (278789) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (279289) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (279789) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (280069) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (280289) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (280789) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (281289) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (281789) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (282289) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (282789) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (282969) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (283289) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (283789) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (284289) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (284789) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (285289) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (285809) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (285859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (286359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (286859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (287359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (287859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (288359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (288679) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (288859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (289359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (289859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (290359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (290859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (291359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (291549) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (291859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (292359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (292859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (293359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (293859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (294359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (294619) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (294859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (295359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (295859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (296359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (296859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (297359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (297799) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (297869) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (298369) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (298869) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (299369) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (299869) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (300369) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (300759) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (300869) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (301369) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (301869) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (302369) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (302869) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (303369) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (303839) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (303869) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (304369) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (304869) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (305369) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (305869) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (306369) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (306699) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (306869) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (307369) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (307869) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (308369) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (308869) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (309369) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (309769) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (309869) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (310369) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (310869) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (311369) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (311869) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (312369) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (312849) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (313219) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (313719) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (314219) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (314719) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (315219) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (315719) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (316109) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (316219) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (316719) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (317219) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (317719) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (318219) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (318719) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (319219) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (319399) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (319759) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (320259) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (320759) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (321259) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (321759) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (322259) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (322359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (322859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (323359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (323859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (324359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (324859) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (325359) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (325559) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (325929) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (326429) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (326929) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (327429) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (327929) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (328429) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (328829) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (328929) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (329429) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (329929) DOOR_MONITOR: Door/Window is CLOSED[0m

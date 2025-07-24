@@ -1,0 +1,213 @@
+PI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+loa�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1-1-g65c3296662-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 21 2025 00:47:29[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (41) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (55) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (68) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=33dcch (212428) map[0m
+[0;32mI (164) esp_image: segment 1: paddr=00043df4 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=00043e18 vaddr=3ffb0000 size=03f20h ( 16160) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00047d40 vaddr=40080000 size=082d8h ( 33496) load[0m
+[0;32mI (189) esp_image: segment 4: paddr=00050020 vaddr=400d0020 size=a6518h (681240) map[0m
+[0;32mI (422) esp_image: segment 5: paddr=000f6540 vaddr=400882d8 size=0f4c0h ( 62656) load[0m
+[0;32mI (457) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (457) boot: Disabling RNG early entropy source...[0m
+[0;32mI (468) cpu_start: Multicore app[0m
+[0;32mI (476) cpu_start: Pro cpu start user code[0m
+[0;32mI (476) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (476) app_init: Application information:[0m
+[0;32mI (476) app_init: Project name:     door_monitor[0m
+[0;32mI (481) app_init: App version:      v5.4.1-1-g65c3296662-dirty[0m
+[0;32mI (486) app_init: Compile time:     Jul 21 2025 21:20:39[0m
+[0;32mI (491) app_init: ELF file SHA256:  98d4238f4...[0m
+[0;32mI (496) app_init: ESP-IDF:          v5.4.1-1-g65c3296662-dirty[0m
+[0;32mI (501) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (505) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (509) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (513) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (519) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (524) heap_init: At 3FFB87B8 len 00027848 (158 KiB): DRAM[0m
+[0;32mI (529) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (535) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (540) heap_init: At 40097798 len 00008868 (34 KiB): IRAM[0m
+[0;32mI (547) spi_flash: detected chip: generic[0m
+[0;32mI (549) spi_flash: flash io: dio[0m
+[0;33mW (552) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (565) main_task: Started on CPU0[0m
+[0;32mI (575) main_task: Calling app_main()[0m
+[0;32mI (605) wifi:wifi driver task: 3ffc1934, prio:23, stack:6656, core=0[0m
+[0;32mI (615) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (615) wifi:wifi certification version: v7.0[0m
+[0;32mI (615) wifi:config NVS flash: enabled[0m
+[0;32mI (615) wifi:config nano formatting: disabled[0m
+[0;32mI (625) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (625) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (625) wifi:Init management short buffer num: 32[0m
+[0;32mI (635) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (635) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (645) wifi:Init static rx buffer num: 10[0m
+[0;32mI (645) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (655) wifi_init: rx ba win: 6[0m
+[0;32mI (655) wifi_init: accept mbox: 6[0m
+[0;32mI (655) wifi_init: tcpip mbox: 32[0m
+[0;32mI (655) wifi_init: udp mbox: 6[0m
+[0;32mI (665) wifi_init: tcp mbox: 6[0m
+[0;32mI (665) wifi_init: tcp tx win: 5760[0m
+[0;32mI (665) wifi_init: tcp rx win: 5760[0m
+[0;32mI (665) wifi_init: tcp mss: 1440[0m
+[0;32mI (675) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (675) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (685) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (765) wifi:mode : sta (f4:65:0b:46:b0:cc)[0m
+[0;32mI (765) wifi:enable tsf[0m
+[0;32mI (775) DOOR_MONITOR: 📡 Connecting to Wi-Fi...[0m
+[0;32mI (12615) esp_netif_handlers: sta ip: 192.168.0.39, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;33mW (12615) DOOR_MONITOR: ✅ Wi-Fi connected![0m
+[0;32mI (12615) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (12625) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;33mW (12625) DOOR_MONITOR: GPIO configured. Monitoring started.[0m
+[0;32mI (13235) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (15415) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (17555) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (19825) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (22075) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (24535) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (26685) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (28735) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (32845) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (35175) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (37525) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (39685) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (41625) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (43795) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (47155) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (51145) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (53195) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (55545) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (57605) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (59965) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (63645) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (65895) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (68475) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (70715) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (74285) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (76855) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (80625) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (83105) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (85985) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (88435) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (90685) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (92725) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (94905) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (97715) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (99795) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (102265) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (104815) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (106975) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (109325) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (111785) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (114855) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (117625) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (119975) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (122145) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (127365) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (129805) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (132695) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (135535) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (138215) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (141055) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (143435) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (145775) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (147725) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (149985) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (152215) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (154685) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (156735) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (158765) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (161025) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (163195) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (165735) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (167795) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (170245) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (172295) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (175465) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (177825) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (180075) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (182225) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (184585) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (186725) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (188775) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (191245) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (193395) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (195445) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (197485) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (199525) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (201575) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (203825) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (205875) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (208225) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (212545) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (215315) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (217555) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (220035) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (222165) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (224555) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (226565) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (229125) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (231635) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (233955) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (235885) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (238265) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (240735) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (243395) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (245615) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (247675) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (249705) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (252035) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (254435) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (256465) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (259035) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (262515) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (265075) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (267615) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (270455) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (272645) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (274705) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (277145) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (279205) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (282465) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (284735) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (286965) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (289025) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (291085) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (293345) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (295375) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (297955) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (300135) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (302135) esp-x509-crt-bundle: Certificate validated[0m

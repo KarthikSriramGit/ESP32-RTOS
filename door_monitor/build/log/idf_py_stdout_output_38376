@@ -1,0 +1,92 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.4.1\door_monitor\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.4.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Espressif/frameworks/esp-idf-v5.4.1/door_monitor/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6580 bytes. 0xa80 bytes (9%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/door_monitor.c.obj
+[5/10] Linking C static library esp-idf\main\libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable door_monitor.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/Espressif/frameworks/esp-idf-v5.4.1/door_monitor/build/door_monitor.bin
+[9/10] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.4.1\door_monitor\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.4.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Espressif/frameworks/esp-idf-v5.4.1/door_monitor/build/partition_table/partition-table.bin C:/Espressif/frameworks/esp-idf-v5.4.1/door_monitor/build/door_monitor.bin"
+door_monitor.bin binary size 0xf6ad0 bytes. Smallest app partition is 0x100000 bytes. 0x9530 bytes (4%) free.
+Warning: The smallest app partition is nearly full (4% free space left)!
+[9/10] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.4.1\components\esptool_py && C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.4.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.4_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.4.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Espressif/frameworks/esp-idf-v5.4.1/door_monitor/build -P C:/Espressif/frameworks/esp-idf-v5.4.1/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 door_monitor.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port COM3
+Connecting.....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: f4:65:0b:46:b0:cc
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00106fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 25984 bytes to 16399...
+Writing at 0x00001000... (50 %)
+Writing at 0x00007577... (100 %)
+Wrote 25984 bytes (16399 compressed) at 0x00001000 in 0.7 seconds (effective 288.3 kbit/s)...
+Hash of data verified.
+Compressed 1010384 bytes to 642700...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001c8a3... (5 %)
+Writing at 0x0002776e... (7 %)
+Writing at 0x0002c34c... (10 %)
+Writing at 0x00031371... (12 %)
+Writing at 0x0003691b... (15 %)
+Writing at 0x0003e0ec... (17 %)
+Writing at 0x00049413... (20 %)
+Writing at 0x0004ed7c... (22 %)
+Writing at 0x00054bd2... (25 %)
+Writing at 0x0005a7dd... (27 %)
+Writing at 0x000606c7... (30 %)
+Writing at 0x00065f25... (32 %)
+Writing at 0x0006bcf1... (35 %)
+Writing at 0x00071a76... (37 %)
+Writing at 0x000775be... (40 %)
+Writing at 0x0007d195... (42 %)
+Writing at 0x00082ce1... (45 %)
+Writing at 0x00088a97... (47 %)
+Writing at 0x0008ef9f... (50 %)
+Writing at 0x00094d5f... (52 %)
+Writing at 0x0009acff... (55 %)
+Writing at 0x000a0139... (57 %)
+Writing at 0x000a53bf... (60 %)
+Writing at 0x000aab8c... (62 %)
+Writing at 0x000b02c8... (65 %)
+Writing at 0x000b566c... (67 %)
+Writing at 0x000bab91... (70 %)
+Writing at 0x000c074c... (72 %)
+Writing at 0x000c5fa3... (75 %)
+Writing at 0x000cbc2f... (77 %)
+Writing at 0x000d186f... (80 %)
+Writing at 0x000d7a42... (82 %)
+Writing at 0x000dd3fb... (85 %)
+Writing at 0x000e3cf2... (87 %)
+Writing at 0x000edb6f... (90 %)
+Writing at 0x000f3f73... (92 %)
+Writing at 0x000f9fa9... (95 %)
+Writing at 0x00100021... (97 %)
+Writing at 0x001052d2... (100 %)
+Wrote 1010384 bytes (642700 compressed) at 0x00010000 in 17.3 seconds (effective 466.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 289.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

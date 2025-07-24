@@ -1,0 +1,126 @@
+FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+loa�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1-1-g65c3296662-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 21 2025 00:47:29[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (41) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (55) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (68) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=34844h (215108) map[0m
+[0;32mI (165) esp_image: segment 1: paddr=0004486c vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (165) esp_image: segment 2: paddr=00044890 vaddr=3ffb0000 size=03f78h ( 16248) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00048810 vaddr=40080000 size=07808h ( 30728) load[0m
+[0;32mI (189) esp_image: segment 4: paddr=00050020 vaddr=400d0020 size=a7b08h (686856) map[0m
+[0;32mI (423) esp_image: segment 5: paddr=000f7b30 vaddr=40087808 size=101b4h ( 65972) load[0m
+[0;32mI (461) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (461) boot: Disabling RNG early entropy source...[0m
+[0;32mI (471) cpu_start: Multicore app[0m
+[0;32mI (479) cpu_start: Pro cpu start user code[0m
+[0;32mI (479) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (480) app_init: Application information:[0m
+[0;32mI (480) app_init: Project name:     door_monitor[0m
+[0;32mI (484) app_init: App version:      v5.4.1-1-g65c3296662-dirty[0m
+[0;32mI (489) app_init: Compile time:     Jul 21 2025 01:03:28[0m
+[0;32mI (495) app_init: ELF file SHA256:  91f8a37f0...[0m
+[0;32mI (499) app_init: ESP-IDF:          v5.4.1-1-g65c3296662-dirty[0m
+[0;32mI (504) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (508) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (512) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (516) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (522) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (527) heap_init: At 3FFB8870 len 00027790 (157 KiB): DRAM[0m
+[0;32mI (533) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (538) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (544) heap_init: At 400979BC len 00008644 (33 KiB): IRAM[0m
+[0;32mI (550) spi_flash: detected chip: generic[0m
+[0;32mI (553) spi_flash: flash io: dio[0m
+[0;33mW (555) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (569) main_task: Started on CPU0[0m
+[0;32mI (579) main_task: Calling app_main()[0m
+[0;32mI (609) wifi:wifi driver task: 3ffc1af4, prio:23, stack:6656, core=0[0m
+[0;32mI (619) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (619) wifi:wifi certification version: v7.0[0m
+[0;32mI (619) wifi:config NVS flash: enabled[0m
+[0;32mI (619) wifi:config nano formatting: disabled[0m
+[0;32mI (629) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (629) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (629) wifi:Init management short buffer num: 32[0m
+[0;32mI (639) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (639) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (649) wifi:Init static rx buffer num: 10[0m
+[0;32mI (649) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (659) wifi_init: rx ba win: 6[0m
+[0;32mI (659) wifi_init: accept mbox: 6[0m
+[0;32mI (659) wifi_init: tcpip mbox: 32[0m
+[0;32mI (659) wifi_init: udp mbox: 6[0m
+[0;32mI (669) wifi_init: tcp mbox: 6[0m
+[0;32mI (669) wifi_init: tcp tx win: 5760[0m
+[0;32mI (669) wifi_init: tcp rx win: 5760[0m
+[0;32mI (669) wifi_init: tcp mss: 1440[0m
+[0;32mI (679) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (679) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (689) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (769) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (789) wifi:mode : sta (f4:65:0b:46:b0:cc)[0m
+[0;32mI (789) wifi:enable tsf[0m
+[0;32mI (789) DOOR_MONITOR: 📡 Connecting to Wi-Fi...[0m
+[0;32mI (799) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (809) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (829) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (839) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (849) wifi:<ba-add>idx:0 (ifx:0, 6c:cd:d6:77:6c:77), tid:5, ssn:0, winSize:64[0m
+[0;32mI (879) wifi:connected with Ace & King of Hearts, aid = 4, channel 1, BW20, bssid = 6c:cd:d6:77:6c:77[0m
+[0;32mI (879) wifi:security: WPA2-PSK, phy: bgn, rssi: -66[0m
+[0;32mI (889) wifi:pm start, type: 1[0m
+
+[0;32mI (889) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (919) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (919) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1409) wifi:<ba-add>idx:1 (ifx:0, 6c:cd:d6:77:6c:77), tid:0, ssn:0, winSize:64[0m
+[0;32mI (3469) esp_netif_handlers: sta ip: 192.168.0.39, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (3469) DOOR_MONITOR: ✅ Wi-Fi connected![0m
+[0;32mI (3469) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3479) DOOR_MONITOR: GPIO 4 configured for sensor[0m
+[0;32mI (3489) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (4219) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (4699) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (6359) DOOR_MONITOR: ✅ Message sent! Status = 200, Length = 347[0m
+[0;32mI (7059) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (8509) DOOR_MONITOR: ✅ Message sent! Status = 400, Length = 73[0m
+[0;32mI (10969) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (18549) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (25719) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (32699) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (39629) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (47009) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (53969) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (60899) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (68099) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (76709) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (83899) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (91649) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (99089) esp-x509-crt-bundle: Certificate validated[0m

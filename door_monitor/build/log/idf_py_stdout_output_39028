@@ -1,0 +1,502 @@
+v:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1-1-g65c3296662-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 21 2025 00:47:29[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (41) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (55) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (68) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=33b80h (211840) map[0m
+[0;32mI (164) esp_image: segment 1: paddr=00043ba8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=00043bcc vaddr=3ffb0000 size=03f10h ( 16144) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00047ae4 vaddr=40080000 size=08534h ( 34100) load[0m
+[0;32mI (189) esp_image: segment 4: paddr=00050020 vaddr=400d0020 size=a3f58h (671576) map[0m
+[0;32mI (418) esp_image: segment 5: paddr=000f3f80 vaddr=40088534 size=0f264h ( 62052) load[0m
+[0;32mI (454) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (454) boot: Disabling RNG early entropy source...[0m
+[0;32mI (464) cpu_start: Multicore app[0m
+[0;32mI (473) cpu_start: Pro cpu start user code[0m
+[0;32mI (473) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (473) app_init: Application information:[0m
+[0;32mI (473) app_init: Project name:     door_monitor[0m
+[0;32mI (477) app_init: App version:      v5.4.1-1-g65c3296662-dirty[0m
+[0;32mI (483) app_init: Compile time:     Jul 21 2025 20:28:03[0m
+[0;32mI (488) app_init: ELF file SHA256:  94c393d2d...[0m
+[0;32mI (492) app_init: ESP-IDF:          v5.4.1-1-g65c3296662-dirty[0m
+[0;32mI (498) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (502) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (506) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (510) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (516) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFB87A0 len 00027860 (158 KiB): DRAM[0m
+[0;32mI (526) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (531) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (537) heap_init: At 40097798 len 00008868 (34 KiB): IRAM[0m
+[0;32mI (544) spi_flash: detected chip: generic[0m
+[0;32mI (546) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (562) main_task: Started on CPU0[0m
+[0;32mI (572) main_task: Calling app_main()[0m
+[0;32mI (602) wifi:wifi driver task: 3ffc191c, prio:23, stack:6656, core=0[0m
+[0;32mI (612) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (612) wifi:wifi certification version: v7.0[0m
+[0;32mI (612) wifi:config NVS flash: enabled[0m
+[0;32mI (612) wifi:config nano formatting: disabled[0m
+[0;32mI (622) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (622) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (622) wifi:Init management short buffer num: 32[0m
+[0;32mI (632) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (632) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (642) wifi:Init static rx buffer num: 10[0m
+[0;32mI (642) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (652) wifi_init: rx ba win: 6[0m
+[0;32mI (652) wifi_init: accept mbox: 6[0m
+[0;32mI (652) wifi_init: tcpip mbox: 32[0m
+[0;32mI (652) wifi_init: udp mbox: 6[0m
+[0;32mI (662) wifi_init: tcp mbox: 6[0m
+[0;32mI (662) wifi_init: tcp tx win: 5760[0m
+[0;32mI (662) wifi_init: tcp rx win: 5760[0m
+[0;32mI (662) wifi_init: tcp mss: 1440[0m
+[0;32mI (672) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (672) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (682) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (762) wifi:mode : sta (f4:65:0b:46:b0:cc)[0m
+[0;32mI (762) wifi:enable tsf[0m
+[0;32mI (772) DOOR_MONITOR: 📡 Connecting to Wi-Fi...[0m
+[0;32mI (782) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (782) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (792) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (802) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (832) wifi:<ba-add>idx:0 (ifx:0, 6c:cd:d6:77:6c:77), tid:5, ssn:0, winSize:64[0m
+[0;32mI (882) wifi:connected with Ace & King of Hearts, aid = 4, channel 1, BW20, bssid = 6c:cd:d6:77:6c:77[0m
+[0;32mI (882) wifi:security: WPA2-PSK, phy: bgn, rssi: -76[0m
+[0;32mI (882) wifi:pm start, type: 1[0m
+
+[0;32mI (882) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (932) wifi:<ba-add>idx:1 (ifx:0, 6c:cd:d6:77:6c:77), tid:0, ssn:0, winSize:64[0m
+[0;32mI (972) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (972) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (3212) esp_netif_handlers: sta ip: 192.168.0.39, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (3212) DOOR_MONITOR: ✅ Wi-Fi connected![0m
+[0;32mI (3212) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3222) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3222) DOOR_MONITOR: Monitoring door status...[0m
+[0;32mI (3232) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (3332) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (3432) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (3532) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (3632) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (3732) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (3832) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (3932) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (4032) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (4132) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (4232) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (4332) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (4432) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (4532) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (4632) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (4732) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (4832) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (4932) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (5032) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (5132) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (5232) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (5332) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (5432) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (5532) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (5632) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (5732) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (5832) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (5932) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (6032) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (6132) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (6232) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (6332) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (6432) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (6532) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (6632) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (6732) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (6832) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (6932) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (7032) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (7132) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (7232) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (7332) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (7432) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (7532) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (7632) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (7732) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (7832) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (7932) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (8032) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (8132) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (8232) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (8332) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (8432) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (8532) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (8632) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (8732) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (8832) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (8932) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (9032) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (9132) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (9232) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (9332) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (9432) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (9532) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (9632) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (9732) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (9832) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (9932) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (10032) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (10132) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (10232) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (10332) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (10432) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (10532) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (10632) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (10732) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (10832) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (10932) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (11032) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (11132) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (11232) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (11332) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (11432) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (11532) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (11632) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (11732) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (11832) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (11932) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (12032) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (12132) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (12232) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (12332) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (12432) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (12532) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (12632) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (12732) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (12832) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (12932) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (13032) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (13132) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (13232) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (13332) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (13432) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (13532) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (13632) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (13732) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (13832) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (13932) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (14032) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (14132) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (14232) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (14332) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (14432) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (14532) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (14632) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (14732) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (14832) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (14932) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (15032) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (15132) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (15232) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (15332) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (15432) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (15532) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (15632) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (15732) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (15832) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (15932) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (16032) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (16132) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (16232) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (16332) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (16432) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (16532) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (16632) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (16732) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (16832) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (16932) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (17032) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (17132) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (17232) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (17332) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (17432) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (17532) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (17632) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (17732) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (17832) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (17932) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (18032) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (18132) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (18232) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (18332) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (18432) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (18532) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (18632) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (18732) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (18832) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (18932) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (19032) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (19132) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (19232) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (19332) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (19432) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (19532) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (19632) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (19732) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (19832) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (19932) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (20032) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (20132) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (20232) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (20332) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (20432) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (20532) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (20632) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (20732) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (20832) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (20932) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (21032) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (21132) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (21232) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (21332) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (21432) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (21532) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (21632) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (21732) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (21832) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (21932) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (22032) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (22132) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (22232) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (22332) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (22432) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (22532) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (22632) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (22732) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (22832) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (22932) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (23032) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (23132) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (23232) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (23332) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (23432) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (23532) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (23632) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (23732) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (23832) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (23932) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (24032) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (24132) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (24232) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (24332) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (24432) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (24532) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (24632) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (24732) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (24832) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (24932) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (25032) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (25132) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (25232) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (25332) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (25432) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (25532) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (25632) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (25732) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (25832) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (25932) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (26032) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (26132) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (26232) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (26332) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (26432) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (26532) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (26632) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (26732) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (26832) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (26932) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (27032) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (27132) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (27232) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (27332) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (27432) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (27532) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (27632) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (27732) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (27832) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (27932) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (28032) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (28132) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (28232) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (28332) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (28432) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (28532) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (28632) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (28732) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (28832) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (28932) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (29032) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (29132) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (29232) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (29332) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (29432) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (29532) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (29632) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (29732) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (29832) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (29932) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (30032) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (30132) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (30232) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (30332) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (30432) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (30532) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (30632) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (30732) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (30832) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (30932) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (31032) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (31132) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (31232) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (31332) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (31432) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (31532) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (31632) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (31732) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (31832) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (31932) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (32032) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (32132) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (32232) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (32332) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (32432) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (32532) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (32632) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (32732) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (32832) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (32932) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (33032) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (33132) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (33232) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (33332) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (33432) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (33532) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (33632) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (33732) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (33832) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (33932) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (34032) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (34132) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (34232) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (34332) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (34432) DOOR_MONITOR: Door/Window is CLOSED[0m
+[0;32mI (34532) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (34632) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (34732) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (34832) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (34932) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (35032) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (35132) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (35232) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (35332) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (35432) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (35532) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (35632) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (35732) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (35832) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (35932) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (36032) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (36132) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (36232) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (36332) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (36432) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (36532) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (36632) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (36732) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (36832) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (36932) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (37032) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (37132) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (37232) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (37332) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (37432) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (37532) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (37632) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (37732) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (37832) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (37932) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (38032) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (38132) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (38232) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (38332) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (38432) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (38532) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (38632) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (38732) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (38832) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (38932) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (39032) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (39132) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (39232) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (39332) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (39432) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (39532) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (39632) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (39732) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (39832) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (39932) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (40032) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (40132) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (40232) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (40332) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (40432) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (40532) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (40632) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (40732) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (40832) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (40932) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (41032) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (41132) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (41232) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (41332) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (41432) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (41532) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (41632) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (41732) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (41832) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (41932) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (42032) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (42132) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (42232) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (42332) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (42432) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (42532) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (42632) DOOR_MONITOR: Door/Window is OPEN[0m
+[0;32mI (42732) DOOR_MONITOR: Door/Window is OPEN[0m
